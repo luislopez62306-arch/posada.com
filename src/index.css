@@ -1,0 +1,258 @@
+@import "tailwindcss";
+
+/* ==================== SISTEMA TIPOGRÁFICO DE ALTA COSTURA ==================== */
+:root {
+  --font-display: 'Cinzel Decorative', 'Cinzel', serif;
+  --font-script: 'Allura', 'Great Vibes', cursive;
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Cinzel', 'Montserrat', -apple-system, sans-serif;
+}
+
+/* Tema 1: Château Français & Haute Couture (Distinguido Francés - Bodoni & Pinyon Script) */
+.tipo-francaise {
+  --font-display: 'Bodoni Moda', 'Playfair Display', Georgia, serif;
+  --font-script: 'Pinyon Script', 'Parisienne', cursive;
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', serif;
+  --font-sans: 'Tenor Sans', 'Montserrat', sans-serif;
+}
+
+/* Tema 2: Haute Couture Parisienne (Distinguido Francés - Italiana & Parisienne) */
+.tipo-parisienne {
+  --font-display: 'Italiana', 'Cinzel', 'Playfair Display', Georgia, serif;
+  --font-script: 'Parisienne', 'Allura', cursive;
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', serif;
+  --font-sans: 'Tenor Sans', 'Montserrat', sans-serif;
+}
+
+/* Tema 3: Realeza Imperial (Majestuoso & Solemne - Cinzel Decorative & Allura) */
+.tipo-imperial {
+  --font-display: 'Cinzel Decorative', 'Cinzel', serif;
+  --font-script: 'Allura', 'Great Vibes', cursive;
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Cinzel', 'Montserrat', sans-serif;
+}
+
+/* Tema 4: Vogue Editorial (Alta Moda Contemporánea - Prata & Great Vibes) */
+.tipo-vogue {
+  --font-display: 'Prata', 'Playfair Display', serif;
+  --font-script: 'Great Vibes', 'Alex Brush', cursive;
+  --font-serif: 'Marcellus', 'Bellefair', serif;
+  --font-sans: 'Tenor Sans', sans-serif;
+}
+
+/* Tema 5: Gala Neoclásica (Cormorant Garamond & Alex Brush) */
+.tipo-clasico {
+  --font-display: 'Cormorant Garamond', 'Bodoni Moda', Georgia, serif;
+  --font-script: 'Alex Brush', 'Pinyon Script', cursive;
+  --font-serif: 'Bellefair', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Montserrat', sans-serif;
+}
+
+@layer utilities {
+  .font-editorial {
+    font-family: var(--font-display);
+  }
+  .font-bodoni {
+    font-family: var(--font-display);
+  }
+  .font-cinzel {
+    font-family: 'Cinzel Decorative', 'Cinzel', serif;
+  }
+  .font-italiana {
+    font-family: 'Italiana', 'Cinzel', serif;
+  }
+  .font-serif-luxury {
+    font-family: var(--font-serif);
+  }
+  .font-script-luxury {
+    font-family: var(--font-script);
+  }
+  .font-pinyon {
+    font-family: 'Pinyon Script', cursive;
+  }
+  .font-great-vibes {
+    font-family: 'Great Vibes', cursive;
+  }
+  .font-parisienne {
+    font-family: 'Parisienne', cursive;
+  }
+  .font-allura {
+    font-family: 'Allura', cursive;
+  }
+  .font-alex {
+    font-family: 'Alex Brush', cursive;
+  }
+  .font-sans-luxury {
+    font-family: var(--font-sans);
+  }
+  .font-tenor {
+    font-family: 'Tenor Sans', sans-serif;
+  }
+  .font-prata {
+    font-family: 'Prata', serif;
+  }
+  .font-marcellus {
+    font-family: 'Marcellus', serif;
+  }
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  .rotate-x-180 {
+    transform: rotateX(180deg);
+  }
+}
+
+/* Rojo Velvet & Champagne Shimmer */
+@keyframes redVelvetShimmer {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(200, 29, 37, 0.5), inset 0 0 12px rgba(212, 175, 55, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(220, 38, 38, 0.75), inset 0 0 20px rgba(212, 175, 55, 0.65);
+  }
+}
+
+.wax-seal-glow {
+  animation: redVelvetShimmer 3s ease-in-out infinite;
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(0.5deg);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+@keyframes swingSlow {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.animate-swing {
+  transform-origin: top center;
+  animation: swingSlow 4s ease-in-out infinite;
+}
+
+.animate-swing-delayed {
+  transform-origin: top center;
+  animation: swingSlow 5s ease-in-out infinite 1.5s;
+}
+
+@keyframes fairyTwinkle {
+  0%, 100% {
+    opacity: 0.45;
+    filter: drop-shadow(0 0 3px rgba(245, 222, 147, 0.4));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px rgba(245, 222, 147, 0.95)) drop-shadow(0 0 16px rgba(212, 175, 55, 0.7));
+  }
+}
+
+.animate-fairy-twinkle {
+  animation: fairyTwinkle 2.4s ease-in-out infinite;
+}
+
+/* Luxury Rojo & Dorado Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF3F3;
+}
+::-webkit-scrollbar-thumb {
+  background: #C81D25;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Keyframes de entrada suave para RSVP */
+@keyframes rsvpFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-rsvp-fade-up {
+  animation: rsvpFadeInUp 0.85s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* ==================== TEXTURAS NAVIDEÑAS DE LAS IMÁGENES ==================== */
+
+/* 1. Textura Rayas Verticales Navideñas (Inspirada en IMG_4499: Wishlist de Navidad) */
+.textura-rayas-verticales {
+  background-color: #6E121C;
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      #78131F 0px,
+      #78131F 54px,
+      #8C1825 54px,
+      #8C1825 56px,
+      #D59B97 56px,
+      #DFADA9 108px,
+      #D59B97 110px,
+      #78131F 110px
+    );
+}
+
+/* 2. Textura Rayas Diagonales Festivas (Inspirada en IMG_4500: Cascanueces Navideño) */
+.textura-rayas-diagonales {
+  background-color: #6E1510;
+  background-image: 
+    repeating-linear-gradient(
+      135deg,
+      #721810 0px,
+      #721810 44px,
+      #A94756 44px,
+      #A94756 88px
+    );
+}
+
+/* Micro-textura de tejido / fibra textil táctil para mayor realismo como en la foto */
+.textura-fibra-overlay {
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.04) 0px,
+      rgba(0, 0, 0, 0.04) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.045) 0px,
+      rgba(255, 255, 255, 0.045) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  background-size: 3px 3px;
+}
+

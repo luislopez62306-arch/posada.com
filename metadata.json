@@ -1,0 +1,8 @@
+{
+  "name": "Remix Posada Navideña - Clínica by Leslye",
+  "description": "Invitación digital exclusiva para la Posada Navideña de Clínica de Belleza by Leslye con sobre interactivo, cuenta regresiva, confirmación RSVP y detalles del evento.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
