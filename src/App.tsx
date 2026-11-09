@@ -818,7 +818,7 @@ export default function InvitacionPosadaLeslye() {
 
   // Copiar dirección
   const handleCopiarDireccion = () => {
-    navigator.clipboard.writeText("Calle Compuertas 2318 (Prolongación Blvd. Poseidón), Colonia Diana Laura Riojas");
+    navigator.clipboard.writeText("Calle Compuertas 2318 (Prolongación Blvd. Poseidón), Colonia Diana Laura Riojas, Los Mochis, Sinaloa");
     setDireccionCopiada(true);
     setTimeout(() => setDireccionCopiada(false), 3000);
   };
@@ -827,7 +827,7 @@ export default function InvitacionPosadaLeslye() {
   const handleGoogleCalendar = () => {
     const title = encodeURIComponent("Posada Navideña • Clínica de Belleza by Leslye");
     const details = encodeURIComponent("Una velada especial con cena, brindis, música y sorpresas preparadas con todo el amor por el equipo de Clínica by Leslye.");
-    const location = encodeURIComponent("Calle Compuertas 2318 (Prolongación Blvd. Poseidón), Colonia Diana Laura Riojas");
+    const location = encodeURIComponent("Calle Compuertas 2318 (Prolongación Blvd. Poseidón), Colonia Diana Laura Riojas, Los Mochis, Sinaloa");
     const dates = "20261206T020000Z/20261206T070000Z";
     window.open(`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${dates}&details=${details}&location=${location}`, '_blank');
   };
@@ -1285,7 +1285,7 @@ export default function InvitacionPosadaLeslye() {
 
                   <div>
                     <h3 className="font-editorial text-2xl text-[#2B090E] tracking-wide">
-                      RECEPCIÓN & BRINDIS
+                      RECEPCIÓN
                     </h3>
                     <p className="font-serif-luxury italic text-xl text-[#C81D25] mt-2">
                       5 de Diciembre • 8:00 P.M.
@@ -1315,6 +1315,9 @@ export default function InvitacionPosadaLeslye() {
                     </p>
                     <p className="font-sans-luxury text-sm text-white/95 mt-0.5 font-light">
                       Colonia Diana Laura Riojas
+                    </p>
+                    <p className="font-sans-luxury text-xs text-[#F5DE93] mt-1.5 font-medium tracking-wider uppercase">
+                      Los Mochis, Sinaloa
                     </p>
                   </div>
 

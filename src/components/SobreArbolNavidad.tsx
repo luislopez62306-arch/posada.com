@@ -226,7 +226,7 @@ export default function SobreArbolNavidad({
               Sábado 05 Diciembre • 8:00 PM
             </div>
             <p className="text-[9px] font-sans-luxury tracking-[0.25em] indent-[0.25em] text-[#2B090E]/70 uppercase pt-0.5 text-center w-full">
-              San Pedro Garza García, N.L.
+              Los Mochis, Sinaloa
             </p>
           </div>
         </div>
