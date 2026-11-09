@@ -552,7 +552,6 @@ export default function InvitacionPosadaLeslye() {
   const [sobreOculto, setSobreOculto] = useState(false);
   const [solapaAbierta, setSolapaAbierta] = useState(false);
   const [tarjetaSaliendo, setTarjetaSaliendo] = useState(false);
-  const [mouseTilt, setMouseTilt] = useState({ x: 0, y: 0 });
 
   // ==================== 2. PORTADA DE GALA (NUEVA PORTADA OFICIAL: RETRATO DE GALA LESLYE) ====================
   const opcionesPortada = [

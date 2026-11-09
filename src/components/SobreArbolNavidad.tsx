@@ -12,7 +12,6 @@ export default function SobreArbolNavidad({
   onAbrir
 }: SobreArbolNavidadProps) {
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
-  const [hovered, setHovered] = useState(false);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (solapaAbierta) return;
@@ -32,11 +31,7 @@ export default function SobreArbolNavidad({
     <div 
       className="relative w-full max-w-[390px] sm:max-w-[460px] aspect-[500/570] flex items-center justify-center select-none"
       onMouseMove={handleMouseMove}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => {
-        setHovered(false);
-        setTilt({ x: 0, y: 0 });
-      }}
+      onMouseLeave={() => setTilt({ x: 0, y: 0 })}
       onTouchMove={(e) => {
         if (solapaAbierta || !e.touches[0]) return;
         const rect = e.currentTarget.getBoundingClientRect();
