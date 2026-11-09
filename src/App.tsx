@@ -844,7 +844,7 @@ export default function InvitacionPosadaLeslye() {
       (deseo.trim() ? `💬 *Deseo Navideño:* "${deseo}"\n\n` : `\n`) +
       `_¡Gracias por hacerme parte de esta celebración mágica!_ ✨🥂`;
 
-    const telefono = "528180000000"; // Número WhatsApp
+    const telefono = "526681526293"; // WhatsApp: +52 668 152 6293
     const url = `https://api.whatsapp.com/send?phone=${telefono}&text=${encodeURIComponent(texto)}`;
     window.open(url, '_blank');
     setConfirmado(true);
